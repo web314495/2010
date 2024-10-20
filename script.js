@@ -91,7 +91,7 @@ function hexToRgb(hex) {
 function initStyle() {
     document.getElementById('progressTitle').innerText = 'Bao tiền một mớ bình yên';
     document.getElementById('titleHeader').innerText = 'Chúc Mừng Ngày Phụ nữ Việt Nam 20/10';
-    document.getElementById('contentHeader').innerText = '🌹 Chúc những bông hồng trong gia đình luôn xinh đẹp, luôn hạnh phúc và gặp nhiều may mắn trong cuộc sống nhé ☘️';
+    document.getElementById('contentHeader').innerText = '🌹 Chúc mẹ và hai chị của em ngày 20/10 luôn sức khỏe, hạnh phúc và gặp nhiều may mắn trong cuộc sống. Như những bông hoa giữa sa mạc, hy vọng các chị và mẹ sẽ luôn nở rộ và tỏa sáng, dù cuộc đời có bao nhiêu thử thách. Yêu thương và chăm sóc bản thân mình nhé! ☘️';
     loadSong();
 }
 
@@ -113,7 +113,7 @@ window.onload = async function() {
             const {data} = await response.json();
             document.getElementById('progressTitle').innerText = data?.musicName || 'Ước mơ của mẹ';
             document.getElementById('titleHeader').innerText = data?.tieuDe || 'Chúc Mừng Ngày Phụ nữ Việt Nam 20/10';
-            document.getElementById('contentHeader').innerText = data?.message || '🌹💐 Chúc những người phụ nữ  Việt Nam luôn xinh đẹp\nluôn hạnh phúc và gặp nhiều may mắn trong cuộc sống ☘️';
+            document.getElementById('contentHeader').innerText = data?.message || '🌹💐 Chúc mẹ và hai chị yêu thương của em ngày 20/10 luôn sức khỏe,\n hạnh phúc và gặp nhiều may mắn trong cuộc sống. \nNhư những bông hoa giữa sa mạc, \nhy vọng các chị và mẹ sẽ luôn nở rộ \n và tỏa sáng, dù cuộc đời có bao nhiêu thử thách. \nYêu thương và chăm sóc bản thân mình nhé! ☘️';
             document.documentElement.style.setProperty('--primary-color', data?.color || '#ee5286');
             document.documentElement.style.setProperty('--secondary-color', hexToRgb(data?.color ||"#ee5286"));
             loadSong(data?.musicLink);
