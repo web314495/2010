@@ -1507,6 +1507,6 @@ body {
 
 /* Áp dụng font chữ dễ thương cho toàn bộ trang */
 body, h4, p, .tooltip {
-    font-family: 'Dancing Script', cursive;
+    font-family: Arial, sans-serif;
 }
 
